@@ -1,0 +1,63 @@
+<!-- 
+
+<div class="product m-5">
+    <div class="ui card d-flex m-auto">
+        
+        <div class="content">
+            <app-pricedisplay [price]=" '$' + product.price" class="right floated"></app-pricedisplay>
+            <div class="header">{{product.name}}</div>
+            <div class="image">
+                <app-productimage [product]="product"></app-productimage>
+            </div>
+            <div class="description">
+                <app-productdepartment [product]="product"></app-productdepartment>               
+            </div>
+        </div>
+        <div class="extra content">
+          <span class="left floated">
+            <div class="ui vertical mini blue animated button" tabindex="0">
+                <div class="hidden content">Shop</div>
+                <div class="visible content">
+                  <i class="shop icon"></i> Add
+                </div>
+              </div>
+          </span>
+          <span class="mini right floated star">
+            <p-rating [(ngModel)]="value" stars="5" class="ui mini right floated"></p-rating>
+          </span>
+        </div>
+      </div>
+</div> -->
+
+<div class="card m-auto d-flex p-3">
+    <div class="row">
+        <div class="col-sm-4 col-4 m-auto d-flex">
+            <div class="image">
+                <app-productimage [product]="product"></app-productimage>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-4">
+            <div class="image mb-2">
+                <div class="header"><b>{{product.name}}</b></div>
+            </div>
+            <div class="ui vertical mini blue animated button mb-3" tabindex="0">
+                <div class="hidden content">Shop</div>
+                <div class="visible content">
+                  <i class="shop icon"></i> Add
+                </div>
+            </div>
+            <span class="ui mini  star">
+                <p-rating [(ngModel)]="value" stars="5" class="ui mini right floated m-2"></p-rating>
+            </span>
+        </div>
+        <div class="col-sm-4 col-4 m-auto d-flex">
+            <header class="image right floated m-auto d-flex">
+                <app-pricedisplay [price]=" '$' + product.price" class="right floated"></app-pricedisplay>
+            </header>
+            
+            
+        </div>
+    </div>
+</div>
+

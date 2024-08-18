@@ -1,0 +1,6 @@
+.card{
+    background-color: transparent;
+    box-shadow: 2px 3px 2px gainsboro;
+    width: 500px;
+    border-color: transparent;
+}
